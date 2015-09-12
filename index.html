@@ -84,12 +84,17 @@
       color:#ffffff;
       line-height:28px;
       font-weight:bold;
+      padding-left: 50px;
+    }
+    .title-light a {
+      color: #ffffff !important;
     }
     .title-small{
       font-size:14px;
       color:#2f3940;
       font-weight:bold;
       line-height:24px;
+      padding-left: 50px;
     }
     .quote {
       font-size: 20px;
@@ -146,7 +151,7 @@
       margin-top:20px;
     }
     .mini-section-spacer{
-      margin-top:20px;
+      padding-top:20px;
     }
     .mini-section-right{
       padding:20px 50px;
@@ -156,7 +161,6 @@
       height:70px;
     }
     .mini-section-left{
-      padding-left:50px;
       vertical-align:middle;
     }
     .article-section{
@@ -231,7 +235,7 @@
     }
     .banner-content {
       font-size: 20px;
-      color: #ffffff;
+      color: #ffffff !important;
       font-weight: 400;
       padding-left: 50px;
     }
@@ -307,6 +311,8 @@
 } @media only screen and (max-width: 480px){
     a[class=mobile-button]{
       width:280px !important;
+      padding: 0 !important;
+      line-height: 46px !important;
     }
 
 } @media only screen and (max-width: 480px){
@@ -317,11 +323,6 @@
 } @media only screen and (max-width: 480px){
     td[class~=article-bottom],td[class*=article-middle]{
       padding-top:30px !important;
-    }
-
-} @media only screen and (max-width: 480px){
-    td[class=mini-section-left]{
-      padding-left:20px !important;
     }
 
 } @media only screen and (max-width: 480px){
@@ -368,6 +369,14 @@
 } @media only screen and (max-width: 480px){
     td[class~=footer-text]{
       padding: 0 !important;
+    }
+} @media only screen and (max-width: 480px){
+    td[class=title-small]{
+      padding-left: 20px !important;
+    }
+} @media only screen and (max-width: 480px){
+    td[class="title-light"]{
+      padding-left: 20px !important;
     }
 }
 </style></head>
@@ -582,8 +591,8 @@
                 </td>
               </tr>
               <tr>
-                <td>
-                <table cellpadding="0" cellspacing="0" border="0" width="600" class="section w320 mini-section-spacer">
+                <td class="mini-section-spacer">
+                <table cellpadding="0" cellspacing="0" border="0" width="600" class="section w320">
                   <tr>
                     <td class="section-block" background="http://res.cloudinary.com/dwde8d8fq/image/upload/v1441904755/background_02_ui48wq.jpg" bgcolor="#99c613" width="600" height="110" valign="top">
                       <!--[if gte mso 9]>
@@ -603,15 +612,15 @@
                                   </tr>
                                   <tr>
                                     <td class="title-light">
-                                      Wofür das Urlaubsgeld verwendet wird
+                                      <a href="">Wofür das Urlaubsgeld verwendet wird</a>
                                     </td>
                                   </tr>
                                 </table>
                               </td>
-                              <td class="mini-section-right">
+                              <td>
                                 <table cellpadding="0" cellspacing="0" width="100%">
                                   <tr>
-                                    <td>
+                                    <td class="mini-section-right">
                                       <img width="70" height="70" class="mini-section-icon" src="https://res.cloudinary.com/dwde8d8fq/image/upload/v1441905886/icon_03_glwam0.gif" alt="">
                                     </td>
                                   </tr>
@@ -831,7 +840,7 @@
                         <!--[if gte mso 9]>
                         <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:200px;">
                         <v:fill type="tile" src="https://res.cloudinary.com/dwde8d8fq/image/upload/v1441978198/banner_m8yrow.jpg" color="#99c613" />
-                        <v:textbox inset="0,0,0,0">
+                        <v:textbox style="v-text-anchor:middle" inset="0,0,0,0">
                         <![endif]-->
                           <div>
                             <center>
@@ -844,13 +853,8 @@
                                 </tr>
                                 <tr>
                                   <td class="banner-button">
-                                    <div><!--[if mso]>
-                                      <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:42px;v-text-anchor:middle;width:176px;" arcsize="12%" strokecolor="#ffffff" fillcolor="#99c613">
-                                        <w:anchorlock/>
-                                        <center style="color:#ffffff;font-family:Helvatica, Arial, sans-serif;font-size:16px;font-weight:bold;">Jetzt bewerben</center>
-                                      </v:roundrect>
-                                    <![endif]--><a class="mobile-button" href="http://"
-                                    style="background-color:#99c613;border:2px solid #ffffff;border-radius:5px;color:#ffffff;display:inline-block;font-family:Helvetica, Arial,sans-serif;font-size:16px;font-weight:bold;line-height:42px;text-align:center;text-decoration:none;width:176px;-webkit-text-size-adjust:none;mso-hide:all;">Jetzt bewerben</a></div>
+                                    <a class="mobile-button" href="http://"
+                                    style="background-color:#99c613;border:2px solid #ffffff;border-radius:5px;color:#ffffff;display:inline-block;font-family:Helvetica, Arial,sans-serif;font-size:16px;font-weight:bold;text-align:center;text-decoration:none;padding: 12px 30px;-webkit-text-size-adjust:none;">Jetzt bewerben</a>
                                   </td>
                                 </tr>
                               </table>
@@ -876,20 +880,20 @@
                     </tr>
                     <tr>
                       <td class="media-group">
-                        <a href="">
+                        <a href="https://www.facebook.com/kununu">
                           <img class="social-icon" width="50" height="50" src="https://res.cloudinary.com/dwde8d8fq/image/upload/v1441983553/fb_03_vflsbj.jpg" alt="Facebook" title="Facebook">
                         </a>&nbsp;
-                        <a href="">
+                        <a href="https://twitter.com/kununu">
                           <img class="social-icon" width="50" height="50" src="https://res.cloudinary.com/dwde8d8fq/image/upload/v1441983546/twitter_03_unlts5.jpg" alt="Twitter" title="Twitter">
                         </a>&nbsp;
-                        <a href="">
+                        <a href="https://www.xing.com">
                           <img class="social-icon" width="50" height="50" src="https://res.cloudinary.com/dwde8d8fq/image/upload/v1441983542/xing_03_yggwyg.jpg" alt="XING" title="XING">
                         </a>
                       </td>
                     </tr>
                     <tr>
                       <td class="footer-text">
-                        XING AG <a class="footer-link" href="">Impressum</a>
+                        XING AG <a class="footer-link" href="http://www.kununu.com/info/impressum">Impressum</a>
                       </td>
                     </tr>
                   </table>
